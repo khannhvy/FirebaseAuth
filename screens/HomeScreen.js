@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, Button } from 'react-native';
-import auth from '@react-native-firebase/auth';
-export const HomeScreen = () => {
+import auth from '@react-native-firebase/auth'; const HomeScreen = () => {
     const handleLogout = () => {
         auth().signOut().catch(error => console.log('Error logging out: ', error));
     };
@@ -16,4 +15,5 @@ export const HomeScreen = () => {
         flex: 1
         }
         });
+        export default HomeScreen;
         

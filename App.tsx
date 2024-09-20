@@ -1,19 +1,18 @@
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import {ForgotPasswordScreen, LoginScreen, SignupScreen, HomeScreen} from'./screens';
-import { RootNavigator } from './navigation/RootNavigator';
+import { ForgotPasswordScreen ,LoginScreen, SignupScreen} from './screens';
 import { AuthenticatedUserProvider } from './providers';
+
 const App = () => {
 return (
   <AuthenticatedUserProvider>
-    <SafeAreaProvider>
-      <RootNavigator />
-    </SafeAreaProvider>
-  </AuthenticatedUserProvider>
+<SafeAreaProvider>
+<ForgotPasswordScreen />
+</SafeAreaProvider>
+</AuthenticatedUserProvider>
 );
 };
 export default App;
-
 
 // /**
 //  * Sample React Native App
